@@ -67,7 +67,7 @@ function MediaMonksPath(options) {
             currentOffsetX -= stepSize;
         }else{
             currentPage = targetPage;
-            self.onPageChanged();
+            self.onPageChanged(currentPage);
         }
     }
 

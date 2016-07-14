@@ -6,20 +6,25 @@ function SliderComponent(data) {
     var self = this;
     var currentPage;
     var pageSize;
-    var background;
-    var canvas;
     var context;
     var minBackgroundHeight;
     var backgroundScaledWidth;
     var offsetX;
     var targetPage;
     var changing = false;
+
+    //html elements
+    var background;
+    var canvas;
     var prev;
     var next;
     var tagline;
     var info;
+    var endTagline;
+    var endIinfo;
     var app;
     var pagination;
+    var loading;
 
     var targetOffsetX;
     var stepSize;
@@ -42,6 +47,9 @@ function SliderComponent(data) {
         info = document.getElementById("info");
         app = document.getElementById("app");
         pagination = document.getElementById("pagination");
+        loading = document.getElementById("loading");
+        endTagline = document.getElementById("end-tagline");
+        endIinfo = document.getElementById("end-info");
         addPaginationElements();
 
         prev.addEventListener('click', onPrevClick);
@@ -92,6 +100,10 @@ function SliderComponent(data) {
 
     function onBackgroundLoad() {
         draw();
+        window.setTimeout(function(){
+            loading.className="hide";
+            app.className = app.className + 'start run';
+        },3000);
     }
 
     function onWindowResize() {
@@ -110,7 +122,7 @@ function SliderComponent(data) {
 
     function update() {
         if (currentOffsetX > 0 && currentOffsetX < background.width) {
-            stepSize = Easing.easeInOutQuad(currentOffsetX, 20, 60, targetOffsetX);
+            stepSize = Easing.easeInOutQuad(currentOffsetX, 20, 180, targetOffsetX);
             context.clearRect(0, 0, canvas.width, canvas.height);
             offsetX = offsetX + stepSize * direction;
             var scaledOffsetX = offsetX * canvas.height / background.height;
@@ -152,21 +164,23 @@ function SliderComponent(data) {
 
         switch(_page){
             case 0:
-                app.className = "";
+                app.className = "run start";
                 break;
             case 1:
-            case 2:
+            case 6:
             case 7:
-            case 5:
-                app.className = "left-text";
+            case 8:
+                app.className = "run left-text";
                 break;
+            case 2:
             case 3:
             case 4:
-            case 6:
-            case 8:
-                app.className = "right-text";
+            case 5:
+                app.className = "run right-text";
                 break;
             case pageSize -1:
+                endTagline.innerHTML = data.sections[_page].tagline;
+                endIinfo.innerHTML = data.sections[_page].info;
                 app.className = "hide-text end";
                 break;
         }

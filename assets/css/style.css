@@ -4,7 +4,8 @@ body {
     padding: 0;
     margin: 0;
     overflow-x: hidden;
-    overflow-y: auto;
+    overflow-y: hidden;
+    background-color: #000;
 }
 
 h2 {
@@ -20,16 +21,23 @@ div.tagline {
     margin: 0;
     padding: 0;
 }
-.left-text div.tagline{top: 300px;right: initial;left: 140px;}
 
-.right-text div.tagline{top: 300px;right: 140px;left: initial;}
+.left-text div.tagline {
+    right: initial;
+    left: 140px;
+    top: 325px;
+}
+
+.right-text div.tagline {
+    top: 325px;
+    right: 140px;
+    left: initial;
+}
 
 div.tagline h2 {
-    font-weight: lighter;
-    font-size: 50pt;
+    font-size: 44pt;
     margin: 0;
     padding: 0;
-
 }
 
 div.info {
@@ -48,8 +56,95 @@ div.info h2 {
 
 }
 
-body.hide-text div.tagline h2{display: none}
-body.hide-text div.info h2{display: none}
+div.end-tagline {
+    position: absolute;
+    top: 10px;
+    right: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+div.end-tagline h2 {
+      font-size: 4em;
+      text-align: right;
+  }
+
+div.end-info p {
+     text-align: right;
+ }
+
+
+.run div.end-tagline{
+    display: none;
+}
+
+.run div.end-info{
+    display: none;
+}
+
+.end div.end-tagline{
+    display: block;
+}
+
+.end div.end-info{
+    display: block;
+}
+
+
+body.start label#prev.prev{
+    display: none;
+}
+
+body.end label.next{
+    display: none;
+}
+
+.run #prev{
+    display: block;
+}
+
+.run #next{
+    display: block;
+}
+
+
+.end div.end-info p a img{
+    display: inline-block;
+}
+
+div.end-info {
+    position: absolute;
+    top: 430px;
+    right: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+div.end-info h2 {
+    font-size: 15pt;
+    text-align: right;
+}
+
+div.end-info h2 a {
+    color: #eee;
+}
+
+body.left-text div.info {
+    bottom: 26px;
+    left: 303px;
+}
+
+body.right-text div.info {
+
+}
+
+body.hide-text div.tagline h2 {
+    display: none
+}
+
+body.hide-text div.info h2 {
+    display: none
+}
 
 cite {
     text-decoration: none;
@@ -65,7 +160,7 @@ cite {
     bottom: 0;
     margin: 0;
     padding: 0;
-    min-height: 580px;
+    min-height: 680px;
     min-width: 816px;
 }
 
@@ -80,7 +175,7 @@ cite {
     color: #FFF;
     font-size: 156pt;
     text-align: center;
-    line-height: 690px;
+    line-height: 3.5em;
     font-family: "Klavika Lt", sans-serif;
     text-shadow: 0 0 15px rgb(119, 119, 119);
 }
@@ -104,7 +199,7 @@ ul.pagination {
     display: inline-block;
     padding: 0;
     margin: 0;
-    z-index: 99999;
+    z-index: 997;
 }
 
 ul.pagination li {
@@ -130,5 +225,42 @@ ul.pagination li a:hover {
 
 ul.pagination li a.selected {
     background-color: #fff;
+}
+
+.loading {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000 url('../images/loaderbg.png') center;
+    z-index: 998;
+}
+
+.loading .smoke {
+    background: url('../images/loaderbg.png') no-repeat center;
+    z-index: 999;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.loading .icon {
+    background: url('../images/monk.png') no-repeat center;
+    z-index: 1000;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 100%;
+    left: 47%;
+}
+
+.loading p {
+    z-index: 1001;
+    position: absolute;
+    text-align: center;
+    bottom: 25%;
+    left: 44%;
+    color: #ffd847;
 }
 

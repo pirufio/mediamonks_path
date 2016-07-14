@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Mediamonks Path</title>
 </head>
@@ -11,7 +12,7 @@
 <div class="nav">
     <div class="tagline">
         <H2>
-           <cite id="tagline">we are breaking<br />our vow<br />of silence</cite>
+           <cite id="tagline"></cite>
         </H2>
     </div>
 
@@ -23,11 +24,34 @@
 
     <div class="info">
         <H2 id="info">
-            In January 2011, after a decade of digital, we opened the doors to our temple.<br>Follow our noble eightfold path to digital enlightenment here.
         </H2>
     </div>
 
+    <div class="end-tagline  hide">
+        <H2>
+            <cite id="end-tagline"></cite>
+        </H2>
+    </div>
+
+    <div class="end-info">
+        <H2 id="end-info">
+        </H2>
+        <p>
+            <a href="#"><img src="assets/images/svg/mail.svg" width="32px" height="32px"></a>
+            <a href="#"><img src="assets/images/svg/facebook.svg" width="32px" height="32px"></a>
+            <a href="#"><img src="assets/images/svg/twitter.svg" width="32px" height="32px"></a>
+        </p>
+    </div>
+
+
     <canvas id="canvas"></canvas>
+
+    <div id="loading" class="loading">
+        <div class="smoke"></div>
+        <div class="icon stylie"></div>
+        <p>patience young padawan.. patience</p>
+    </div>
+
 </div>
 
 <script type="text/javascript" src="assets/js/Util.js"></script>

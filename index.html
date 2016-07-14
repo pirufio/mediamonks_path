@@ -2,23 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/fonts.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Mediamonks Path</title>
 </head>
-<body>
+<body id="app">
 
-    <div class="app">
-        <div class="controls">
-            <div class="control left"></div>
-            <div class="control right"></div>
-        </div>
-        <canvas id="canvas"></canvas>
+<div class="nav">
+    <div class="tagline">
+        <H2>
+           <cite id="tagline">we are breaking<br />our vow<br />of silence</cite>
+        </H2>
     </div>
 
+    <label class="prev" id="prev">&#x2039;</label>
+    <label class="next" id="next">&#x203a;</label>
+    <ul class="pagination" id="pagination">
 
-    <script type="text/javascript" src="assets/js/Util.js"></script>
-    <script type="text/javascript" src="assets/js/Easing.js"></script>
-    <script type="text/javascript" src="assets/js/MediaMonksPath.js"></script>
-    <script type="text/javascript" src="assets/js/main.js"></script>
+    </ul>
+
+    <div class="info">
+        <H2 id="info">
+            In January 2011, after a decade of digital, we opened the doors to our temple.<br>Follow our noble eightfold path to digital enlightenment here.
+        </H2>
+    </div>
+
+    <canvas id="canvas"></canvas>
+</div>
+
+<script type="text/javascript" src="assets/js/Util.js"></script>
+<script type="text/javascript" src="assets/js/Easing.js"></script>
+<script type="text/javascript" src="assets/js/SliderComponent.js"></script>
+<script type="text/javascript" src="assets/js/main.js"></script>
 </body>
 </html>

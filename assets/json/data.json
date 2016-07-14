@@ -1,0 +1,79 @@
+{
+  "data": {
+    "minBackgroundHeight" : "580px",
+    "background" : "assets/images/background.jpg",
+    "backgroundMobile" : "assets/images/background.jpg",
+    "sections": [
+      {
+        "label":"",
+        "index": 0,
+        "x": "0",
+        "tagline": "we are breaking<br />our vow<br />of silence",
+        "info": "In January 2011, after a decade of digital, we opened the doors to our temple.<br>Follow our noble eightfold path to digital enlightenment here."
+      },
+      {
+        "label":"1",
+        "index": 1,
+        "x": "1450",
+        "tagline": "talent is given<br />true skill is <br />earned",
+        "info": "Step 1 out of 8 on the path to digital enlightenment."
+      },
+      {
+        "label":"2",
+        "index": 2,
+        "x": "2010",
+        "tagline": "be flexible to<br />change and<br />sturdy in<br />conviction",
+        "info": "Step 2 out of 8 on the path to digital enlightenment."
+      },
+      {
+        "label":"3",
+        "index": 3,
+        "x": "2850",
+        "tagline": "use many skills<br />yet Work as one",
+        "info": "Step 3 out of 8 on the path to digital enlightenment."
+      },
+      {
+        "label":"4",
+        "index": 4,
+        "x": "3680",
+        "tagline": "to master<br />anything find<br />interest in<br />everything",
+        "info": "Step 4 out of 8 on the path to digital enlightenment."
+      },
+      {
+        "label":"5",
+        "index": 5,
+        "x": "4515",
+        "tagline": "individuals<br />flourish<br />if culture<br />and Wisdom<br />are shared",
+        "info": "Step 4 out of 8 on the path to digital enlightenment."
+      },
+      {
+        "label":"6",
+        "index": 6,
+        "x": "5390",
+        "tagline": "train for<br />perfection but<br />aim for more",
+        "info": "Step 6 out of 8 on the path to digital enlightenment."
+      },
+      {
+        "label":"7",
+        "index": 7,
+        "x": "6300",
+        "tagline": "take pride in your<br />Work but do not<br />seek praise",
+        "info": "Step 7 out of 8 on the path to digital enlightenment."
+      },
+      {
+        "label":"8",
+        "index": 8,
+        "x": "7209",
+        "tagline": "temporary<br />sacrifice brings<br />lasting results",
+        "info": "Step 8 out of 8 on the path to digital enlightenment."
+      },
+      {
+        "label":"",
+        "index": 9,
+        "x": "7209",
+        "tagline": "BECOME A MONK",
+        "info": "Interested in joining our monastery?<br>Check out our current openings on <a href='http://mediamonks.com/careers'><u>mediamonks.com/careers</u></a>."
+      }
+    ]
+  }
+}

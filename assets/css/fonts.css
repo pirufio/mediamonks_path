@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Klavika Bd';
+    src: url('../font/Klavika-Bold.eot');
+    src: url('../font/Klavika-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../font/Klavika-Bold.woff') format('woff'),
+    url('../font/Klavika-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Klavika Rg';
+    src: url('../font/Klavika-Regular.eot');
+    src: url('../font/Klavika-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../font/Klavika-Regular.woff') format('woff'),
+    url('../font/Klavika-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Klavika Md';
+    src: url('../font/Klavika-Medium.eot');
+    src: url('../font/Klavika-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../font/Klavika-Medium.woff') format('woff'),
+    url('../font/Klavika-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Klavika Lt';
+    src: url('../font/Klavika-Light.eot');
+    src: url('../font/Klavika-Light.eot?#iefix') format('embedded-opentype'),
+    url('../font/Klavika-Light.woff') format('woff'),
+    url('../font/Klavika-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}

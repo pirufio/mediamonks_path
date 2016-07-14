@@ -135,7 +135,8 @@ body.left-text div.info {
 }
 
 body.right-text div.info {
-
+    bottom: 26px;
+    left: 303px;
 }
 
 body.hide-text div.tagline h2 {

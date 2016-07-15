@@ -234,7 +234,7 @@ ul.pagination li a.selected {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #000 url('../images/loaderbg.png') center;
+    background: #000 url('../images/loaderbg.png') no-repeat center;
     z-index: 998;
 }
 
@@ -264,4 +264,3 @@ ul.pagination li a.selected {
     left: 44%;
     color: #ffd847;
 }
-
